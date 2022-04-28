@@ -23,7 +23,8 @@ bgImg = loadImage('images/bg.png');
 
 function setup() {
   createCanvas(500, 500);
-
+  bg = createSprite(250,250,10,10);
+  bg.addImage(bgImg);
 
 
   player = createSprite(250,300,20,50);
@@ -36,7 +37,6 @@ function setup() {
 }
 
 function draw() {
-  background(bgImg);
   if(gameState==START)
   {
     if(keyDown("up"))
