@@ -25,7 +25,7 @@ function setup() {
   createCanvas(500, 500);
   bg = createSprite(250,250,10,10);
   bg.addImage(bgImg);
-
+  bg.scale = 0.2;
 
   player = createSprite(250,300,20,50);
   player.addImage("player",jack_image)
